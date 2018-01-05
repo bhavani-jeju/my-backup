@@ -1,0 +1,75 @@
+Goals For 2016-2017
+
+	Need to improve the technical skills
+	Need to Learn the new technologies 
+	Need to improve the leadership skills
+	
+
+Accomplishments in 2015-2016
+Newcars:
+	Implemented the  Mother Page Layout Changes
+	Implemented the New cars Make page new layout integrationintegration
+	Implemented the New cars Model page new layout integrationintegration
+	Implemented the New Car category pages new layout changes
+	Implemented the discontinued logic in new cars module
+	Worked on New cars Mileage and on road price pages
+	Implemented the  exshowroom price(default New delhi) Mail
+	Implemented the Similar cars and makes ranking panel in ad panel 
+Auto Expo
+	Implemented the Auto Expo 2016 module  
+Car Bike news
+	Implemented the Car Bike News module
+Upcoming cars
+	IMplemented the upcoming car module 
+	
+Others	
+	Worked on Top Nav changes
+	worked on Bankbazaar text links on new car desktop pages 
+	
+
+Third party API(s)
+
+	 Implemented the Car Colour Recommender in blog rhs pages
+	 Implemented the mileage bar chart in new car make model mileage pages
+
+New Pages
+	Implemented the New car Brochures Module
+	Worked on  service centers  module
+	Worked on  car vedios module
+
+
+Classical GA conversion to GTM + New page type + section
+	Implemented the gtms for new car offer pages in mobile site
+	Implemented the gtms for Upcoming car(desktop) and  brochure pages
+	
+Seo
+	Implemented the dynamic seo content for newcar related modules
+	Implemented the dynamic seo content for Upcoming car Module
+	Implemented the dynamic seo content for car-bike-news  Module
+	Implemented the dynamic seo content for Auto Expo Module
+	Implemented the dynamic seo content for New car Brochures Module
+	Implemented the dynamic seo content for Car Videos Module
+	
+	
+ADS
+	Implemented the Native sponsered  ads for expert reviews and news module
+	implemented the Banner Ad spots in image section in new car gallery page 
+
+
+Frame work related
+
+	Worked on Single template conversion for new car module
+	Implemented the redis for the upcoming,auto-expo ,car-bike-news,brochures and New car related pages
+
+
+2. Feedback on your Teams (managed by you):
+Not applicable
+3. Feedback on your Colleagues (Not managed by you, but you interact daily with them for work, need your comment even if you have engaged for short period):
+	- It is very pleasure to work with all CT team Members
+	- They are very helpfull and dedicated
+	- They are very helpfull for me in many cases even they are busy
+	- The work very hard and delivered the project at correct time
+4. Feedback on your Managers (likes and dislikes, honest opinions):
+
+5. Feedback on company and infrastructure:
+It is the important thing to mention about company as It will provide the environment with good 
