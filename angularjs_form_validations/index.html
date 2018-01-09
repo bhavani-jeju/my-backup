@@ -1,0 +1,119 @@
+<html ng-app="mymodule">
+	<head>
+		<title>Angular JS Practice</title>
+	</head>
+	<body>
+		<p><a href="#register">Register</a></p>
+		<p><a href="#login">Login</a></p>
+		<script type="text/ng-template" id="register.html">
+				<center>
+				<h2 style="color:green">{{message}}</h2>
+				<h1>{{type}}</h1>
+				<form method="post" name="registerForm">
+					<table>
+						<tr>
+							<td>First Name</td>
+							<td>
+								<input type="text" ng-model="fname" name="fname" id="fname" ng-pattern="/^(?=.*[a-z])[a-z -]+$/i"  required>
+								<span ng-show="registerForm.fname.$invalid && registerForm.fname.$dirty" style="color:red;">
+								<span ng-show="registerForm.fname.$error.required" style="color:red;">First Name is Required</span>
+								<span ng-show="registerForm.fname.$error.pattern" style="color:red;">Enter only Text</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>Last Name</td>
+							<td>
+							<input type="text" ng-model="lname" name="lname" id="lname" ng-pattern="/^(?=.*[a-z])[a-z -]+$/i" required>
+							<span ng-show="registerForm.lname.$invalid && registerForm.lname.$dirty" style="color:red;">
+								<span ng-show="registerForm.lname.$error.required" style="color:red;">Last Name is Required</span>
+								<span ng-show="registerForm.lname.$error.pattern" style="color:red;">Enter only Text</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td>
+								<input type="email" ng-model="email" name="email" id="email"  required>
+								<span ng-show="registerForm.email.$invalid && registerForm.email.$dirty" style="color:red;">
+								<span ng-show="registerForm.email.$error.required" style="color:red;">Email is Required</span>
+								<span ng-show="registerForm.email.$error.email" style="color:red;">Invalid Email ID</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>Mobile</td>
+							<td>
+								<input type="text" ng-model="mobile" name="mobile" id="mobile" ng-minlength=10 ng-pattern="/^[0-9]{1,10}$/"  required>
+								<span ng-show="registerForm.mobile.$invalid && registerForm.mobile.$dirty" style="color:red;">
+								<span ng-show="registerForm.mobile.$error.required" style="color:red;">Mobile is Required</span>
+	
+								<span ng-show="registerForm.mobile.$error.pattern" style="color:red;">Invalid Mobile Number</span>
+								<span ng-show="registerForm.mobile.$error.minlength" style="color:red;">Should be 10 numbers only</span>							 
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>Gender</td>
+							<td>
+								<input type="radio" ng-model="gender" value="female" ng-required="!gender">  Female <br/>
+								<input type="radio" ng-model="gender" value="male" ng-required="!gender"> Male 															
+							</td>
+						</tr>
+						<tr>
+							<td>Address</td>
+							<td>
+								<textarea ng-model="address" name="address" id="address"  required></textarea>
+								<span ng-show="registerForm.address.$invalid && registerForm.address.$dirty && registerForm.address.$error.required" style="color:red;">
+								Address is Required
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><button ng-disabled="registerForm.$invalid" ng-click="validate()">Register</button></td>
+						</tr>																														
+					</table>
+				</form>
+				<center>
+		</script>
+		<script type="text/ng-template" id="login.html">
+				<center>
+				<h2 style="color:green">{{message}}</h2>
+				<h1>{{type}}</h1>
+				<form method="post" name="loginForm">
+					<table>						
+						<tr>
+							<td>Email</td>
+							<td>
+								<input type="email" ng-model="email" name="email" id="email"  required>
+								<span ng-show="loginForm.email.$invalid && loginForm.email.$dirty" style="color:red;">
+								<span ng-show="loginForm.email.$error.required" style="color:red;">Email is Required</span>
+								<span ng-show="loginForm.email.$error.email" style="color:red;">Invalid Email ID</span>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>Password</td>
+							<td>
+								<input type="password" ng-model="password" name="password" id="password"  required>
+								<span ng-show="loginForm.password.$invalid && loginForm.password.$dirty" style="color:red;">
+								<span ng-show="loginForm.password.$error.required" style="color:red;">Password is Required</span>
+								</span>
+							</td>
+						</tr>						
+						<tr>
+							<td></td>
+							<td><button ng-disabled="loginForm.$invalid" ng-click="validate()">Login</button></td>
+						</tr>																														
+					</table>
+				</form>
+				<center>
+		</script>		
+		<div ng-view></div>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/angular-route.min.js"></script>
+		<script type="text/javascript" src="module.js"></script>
+		<script type="text/javascript" src="controller.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+var mymodule=angular.module("mymodule",["ngRoute"]);
